@@ -15,7 +15,7 @@
   }
 
   .logo__black {
-    height: 42px;
+    max-height: 42px;
   }
 
   .header__nav {
@@ -237,11 +237,13 @@
 
   .form {
     flex-wrap: wrap;
+    column-gap: 20px;
     row-gap: 12px;
   }
 
   .form__input {
-    max-width: 323px;
+    max-width: calc(50% - 10px);
+    width: 100%;
     padding: 15px 20px 14px 24px
   }
 
@@ -251,6 +253,253 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 760px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
+  .header {
+    height: 78px;
+  }
+
+  .header__container {
+    row-gap: 4px;
+    padding-top: 10px;
+  }
+
+  .header__search svg {
+    width: 18px;
+  }
+
+  .header__menu {
+    gap: 25px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Для Firefox */
+  }
+
+  .header__menu::-webkit-scrollbar {
+    display: none; /* Для WebKit браузеров */
+  }
+
+  .header__menu-link {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .hero__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero__contant {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 87%;
+    margin-bottom: 11px;
+  }
+
+  .hero__descr {
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 39px;
+    line-height: 135%;
+  }
+
+  .hero__btn {
+    font-size: 12px;
+    padding: 13px 19px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .section-descr {
+    font-size: 14px;
+  }
+
+  .about-us__container {
+    padding-top: 53px;
+    padding-bottom: 41px;
+  }
+
+  .gallery__container {
+    padding-top: 53px;
+    padding-bottom: 46px;
+  }
+
+  .gallery__contant {
+    row-gap: 26px;
+  }
+
+  .gallery__pictures {
+    flex-direction: column;
+    gap: 27px;
+  }
+
+  .catalog__container {
+    padding-top: 53px;
+    padding-bottom: 38px;
+  }
+
+  .catalog__descr {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .catalog__list {
+    gap: 29px;
+  }
+
+  .artist__picture {
+    margin-bottom: -2px;
+  }
+
+  .artist__bio {
+    padding-top: 22px;
+    padding-right: 3px;
+  }
+
+  .artist__name {
+    line-height: 137%;
+    margin-bottom: 8px;
+  }
+
+  .artist__age {
+    margin-bottom: 15px;
+  }
+
+  .events__container {
+    padding-bottom: 38px;
+  }
+
+  .events__list {
+    gap: 20px;
+  }
+
+  .event__about {
+    min-height: 483px;
+    padding: 18px 17px 100px 22px;
+  }
+
+  .event__place, .event__date {
+    font-size: 12px;
+  }
+
+  .event__date {
+    margin-bottom: 12px;
+  }
+
+  .event__title {
+    margin-bottom: 5px;
+  }
+
+  .event__details {
+    bottom: 50px;
+    left: 28px;
+  }
+
+  .projects__container {
+    padding-bottom: 16px;
+  }
+
+  .projects__descr {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+
+  .partners__title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .partners__list {
+    flex-direction: column;
+    gap: 11px;
+  }
+  .partners__item {
+    text-align: center;
+    padding: 29px 63px 26px;
+  }
+
+  .contacts {
+    border-top: unset;
+  }
+
+  .contacts__container {
+    padding-top: 36px;
+    padding-bottom: 47px;
+  }
+
+  .contacts__addres {
+    margin-bottom: 15px;
+  }
+
+  .contact__name {
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+
+  .contact__form {
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
+
+  .form {
+    row-gap: 20px;
+  }
+
+  .form__input {
+    max-width: 100%;
+    padding: 10px 20px 10px 24px;
+  }
+
+  .form__btn {
+    font-size: 0;
+    max-width: 128px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 11px 34px;
+  }
+
+  .form__btn::after {
+    content: "Заказать";
+    font-size: 12px;
+  }
+
+  .messenger__title {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: unset;
+    margin-bottom: 12px;
+  }
+
+  .messenger__button svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    height: 132px;
+    padding-top: 23px;
+    padding-bottom: 17px;
+  }
+
+  .social__link svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__logo {
+    max-width: 97px;
+  }
 }
