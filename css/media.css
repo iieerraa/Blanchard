@@ -1,1 +1,162 @@
-@media (max-width: 1110px) {}
+@media (max-width: 1460px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .header {
+    height: 147px;
+  }
+
+  .header__container {
+    flex-wrap: wrap;
+    row-gap: 23px;
+    padding-top: 30px;
+  }
+
+  .logo__black {
+    height: 42px;
+  }
+
+  .header__nav {
+    margin-right: 0;
+    order: 1;
+  }
+
+  .hero__container {
+    padding-top: 102px;
+    padding-bottom: 101px;
+  }
+
+  .hero__contant {
+    max-width: 660px;
+  }
+
+  .hero__descr {
+    margin-bottom: 133px;
+  }
+
+  .gallery__title {
+    margin-bottom: 20px;
+  }
+
+  .gallery__contant {
+    flex-direction: column;
+    row-gap: 27px;
+  }
+
+  .gallery__sort {
+    align-self: flex-start;
+  }
+
+  .gallery__pictures {
+    gap: 50px;
+  }
+
+  .artist {
+    flex-direction: column;
+  }
+
+  .artist__bio {
+    padding: 33px 0 0 0;
+  }
+
+  .artist__name {
+    margin-bottom: 14px;
+  }
+
+  .artist__age {
+    margin-bottom: 16px;
+  }
+
+  .events__title {
+    margin-bottom: 20px;
+  }
+
+  .events__list {
+    --gap: 27px;
+  }
+
+  .event__about {
+    padding: 16px 32px 100px 34px;
+  }
+
+  .event__place,
+  .event__date {
+    text-align: right;
+  }
+
+  .event__date {
+    margin-bottom: 5px;
+  }
+
+  .event__title {
+    line-height: 137%;
+    margin-bottom: 8px;
+  }
+
+  .event__details {
+    bottom: 50px;
+  }
+
+  .projects__descr {
+    margin-bottom: 22px;
+  }
+
+  .partners__list {
+    gap: 27px;
+  }
+
+  .contacts__container {
+    padding-top: 44px;
+    padding-bottom: 40px;
+  }
+
+  .contacts__contant {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contacts__addres {
+    margin-bottom: 26px;
+  }
+
+  .contact__name {
+    margin-bottom: 14px;
+  }
+
+  .contact__addres {
+    font-size: 14px;
+  }
+
+  .contact__form {
+    margin-bottom: 39px;
+  }
+
+  .form {
+    justify-content: space-between;
+    max-width: 923px;
+    gap: 0;
+  }
+
+  .form__btn {
+    padding: 13px 39px 12px 42px;
+  }
+
+  .footer__container {
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    padding-top: 6px;
+    padding-bottom: 0;
+  }
+
+  .social__link svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1460px) {
+
+}

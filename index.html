@@ -13,7 +13,13 @@
 <body>
   <header class="header">
     <div class="header__container container flex">
-      <a class="header__logo logo" href="#"><img class="logo__black" src="img/logo-white.svg" alt="логотип Blanchard"></a>
+      <a class="header__logo logo" href="#">
+        <picture>
+        <source srcset="img/logo-white.svg" media="(min-width: 1461px)">
+        <source srcset="img/logo-white_1024.svg" media="(min-width: 320px)">
+        <img class="logo__black" src="img/logo-white.svg" alt="логотип Blanchard">
+        </picture>
+      </a>
       <nav class="header__nav">
         <ul class="header__menu list-reset flex">
           <li class="header__menu-item">
@@ -58,14 +64,14 @@
   </section>
   <!-- about-us -->
    <section class="about-us">
-    <div class="about-us__container container section-container">
+    <div class="about-us__container container">
       <h2 class="about-us__title section-title">О&nbsp;нас</h2>
       <p class="about-us__descr section-descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.</p>
     </div>
    </section>
    <!-- gallery -->
    <section id="gallery" class="gallery">
-    <div class="gallery__container container section-container">
+    <div class="gallery__container container">
       <h2 class="gallery__title section-title">Галерея</h2>
       <div class="gallery__contant flex">
         <form class="gallery__sort flex">
@@ -95,7 +101,7 @@
    </section>
    <!-- catalog -->
    <section class="catalog">
-    <div class="catalog__container container section-container">
+    <div class="catalog__container container">
       <h2 class="catalog__title section-title">Каталог</h2>
       <p class="catalog__descr section-descr">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.</p>
       <ul class="catalog__list list-reset flex">
@@ -128,11 +134,15 @@
    </section>
    <!-- events -->
     <section id="events" class="events">
-      <div class="events__container container section-container">
+      <div class="events__container container">
         <h2 class="events__title section-title">События</h2>
         <ul class="events__list list-reset flex">
           <li class="events__item event flex">
-            <img src="img/events_01_1920.png" alt="" class="event__img">
+            <picture>
+              <source srcset="img/events_01_1920.png" media="(min-width: 1461px)">
+              <source srcset="img/events_01_1024.png" media="(min-width: 320px)">
+              <img src="img/events_01_1920.png" alt="" class="event__img">
+            </picture>
             <div class="event__about">
               <span class="event__place">Музей им. Щусева</span>
               <span class="event__date">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</span>
@@ -142,23 +152,31 @@
             </div>
           </li>
           <li class="events__item event flex">
-            <img src="img/events_02_1920.png" alt="" class="event__img">
+            <picture>
+              <source srcset="img/events_02_1920.png" media="(min-width: 1461px)">
+              <source srcset="img/events_02_1024.png" media="(min-width: 320px)">
+              <img src="img/events_02_1920.png" alt="" class="event__img">
+            </picture>
             <div class="event__about">
               <span class="event__place">ММОМА</span>
-            <span class="event__date">24&nbsp;марта 19:00</span>
-            <h3 class="event__title">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.</h3>
-            <p class="event__descr">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта</p>
-            <a href="#" class="event__details">Подробнее</a>
+              <span class="event__date">24&nbsp;марта 19:00</span>
+              <h3 class="event__title">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.</h3>
+              <p class="event__descr">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта</p>
+              <a href="#" class="event__details">Подробнее</a>
             </div>
           </li>
           <li class="events__item event flex">
-            <img src="img/events_03_1920.png" alt="" class="event__img">
+            <picture>
+              <source srcset="img/events_03_1920.png" media="(min-width: 1461px)">
+              <source srcset="img/events_03_1024.png" media="(min-width: 320px)">
+              <img src="img/events_03_1920.png" alt="" class="event__img">
+            </picture>
             <div class="event__about">
               <span class="event__place">Еврейский музей</span>
-            <span class="event__date">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</span>
-            <h3 class="event__title">Выставка &laquo;Формация 2020&raquo;</h3>
-            <p class="event__descr">Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p>
-            <a href="#" class="event__details">Подробнее</a>
+              <span class="event__date">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</span>
+              <h3 class="event__title">Выставка &laquo;Формация 2020&raquo;</h3>
+              <p class="event__descr">Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p>
+              <a href="#" class="event__details">Подробнее</a>
             </div>
           </li>
         </ul>
@@ -166,7 +184,7 @@
     </section>
     <!-- projects -->
      <section id="projects" class="projects">
-      <div class="projects__container container section-container">
+      <div class="projects__container container">
         <h2 class="projects__title title section-title">Проекты</h2>
         <p class="projects__descr section-descr">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости.</p>
         <div class="projects__partners partners">
@@ -189,16 +207,15 @@
           <div class="contacts__contant flex">
             <div class="contacts__addres contact">
               <h3 class="contact__name">Шоурум &#8470;&nbsp;4</h3>
-              <p class="contact__addres">Леонтьевский переулок, дом 5/1</p>
+              <p class="contact__addres">Леонтьевский переулок, дом&nbsp;5/1</p>
             </div>
-
             <form class="contact__form flex form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
               <input class="form__input" type="text" id="name" name="name" placeholder="Имя*" autocomplete="given-name" required aria-label="Введите ваше имя">
               <input class="form__input" type="tel" id="tel" name="tel" placeholder="Телефон*" autocomplete="off" required aria-label="Введите ваш телефонный номер">
               <button class="form__btn btn btn-reset" type="submit">Заказать обратный звонок</button>
             </form>
             <div class="contact__messengers messenger">
-              <h3 class="messenger__title">Связаться в&nbsp;один клик</h3>
+              <h3 class="messenger__title">Связаться в&nbsp;один&nbsp;клик</h3>
               <ul class="messenger__list list-reset flex">
                 <li class="messenger__item whatsapp">
                   <a class="messenger__button whatsapp" href="https://wa.me/" target="_blank" aria-label="Связаться через WhatsApp">
@@ -235,11 +252,6 @@
           </div>
         </div>
       </section>
-    <!-- <picture>
-        <source srcset="img/podcast_01.png" media="(min-width: 671px)">
-        <source srcset="img/podcast_01_320.png" media="(max-width: 670px)">
-        <img class="podcast__img" src="img/podcast_01.png" alt="">
-    </picture> -->
   </main>
 
   <footer class="footer">

@@ -54,7 +54,6 @@ h1, h2, h3, p {
 
 body {
   min-width: 320px;
-
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: var(--black);
@@ -85,7 +84,6 @@ body {
 .list-reset {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -97,21 +95,14 @@ body {
   padding-right: 25px;
 }
 
-.section-container {
-  padding-top: 85px;
-  padding-bottom: 70px;
-}
-
 .section-title {
   font-weight: 400;
   font-size: 48px;
-
   margin-bottom: 21px;
 }
 
 .section-descr {
   max-width: 1080px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -182,7 +173,7 @@ body {
 }
 
 .hero__contant {
-  max-width: 580px;
+  max-width: 555px;
   font-weight: 700;
   color: var(--white);
 }
@@ -207,6 +198,10 @@ body {
 }
 
 /* about-us */
+.about-us__container {
+  padding-top: 85px;
+  padding-bottom: 70px;
+}
 
 /* gallery */
 .gallery {
@@ -216,6 +211,7 @@ body {
 }
 
 .gallery__container {
+  padding-top: 85px;
   padding-bottom: 77px;
 }
 
@@ -236,6 +232,55 @@ body {
   padding-bottom: 3px;
 }
 
+.checkbox__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox__box {
+  position: absolute;
+  margin-top: 11px;
+  box-shadow: 0 0 0 1px var(--white);
+  width: 11px;
+  height: 11px;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.checkbox__input:checked + .checkbox__box {
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 0 1px var(--purpure);
+}
+
+.checkbox__info {
+  margin-left: 24px;
+  transition: color 0.1s ease-in-out;
+}
+
+.checkbox__input:focus-visible + .checkbox__box {
+  box-shadow: 0 0 0 1px var(--purpure);
+}
+
+.checkbox__input:focus-visible ~ .checkbox__info {
+  color: var(--purpure);
+}
+
+.checkbox__input:hover + .checkbox__box {
+  box-shadow: 0 0 0 1px var(--purpure);
+  cursor: pointer;
+}
+
+.checkbox__input:hover ~ .checkbox__info {
+  cursor: pointer;
+}
+
+.checkbox__input:active ~ .checkbox__info {
+  color: var(--purpure);
+}
+
 .gallery__pictures {
   justify-content: space-between;
   width: 100%;
@@ -243,6 +288,11 @@ body {
 }
 
 /* catalog */
+.catalog__container {
+  padding-top: 85px;
+  padding-bottom: 70px;
+}
+
 .catalog__descr {
   margin-bottom: 39px;
 }
@@ -280,6 +330,7 @@ body {
 /* events */
 .events__container {
   padding-top: 15px;
+  padding-bottom: 70px;
 }
 
 .events__list {
@@ -295,7 +346,8 @@ body {
 
 .event__about {
   position: relative;
-  height: 400px;
+  min-height: 400px;
+  height: 100%;
   padding: 14px 50px 70px;
   border: 1px solid var(--gray);
   border-top: unset;
@@ -344,7 +396,6 @@ body {
 }
 
 /* projects */
-
 .projects__container {
   padding-top: 15px;
   padding-bottom: 80px;
