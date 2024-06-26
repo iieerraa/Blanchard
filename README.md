@@ -1,6 +1,6 @@
 # Blanchard
 
- [web-link](iieerraa.github.io/blanchard/)
+ [web-link](iieerraa.github.io/Blanchard/)
 
 ## Description
 
