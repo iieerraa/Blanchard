@@ -83,6 +83,11 @@ body {
   display: flex;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -125,7 +130,7 @@ body {
 
 /* header */
 .header {
-  height: 100px;
+  min-height: 100px;
   color: var(--white);
   background-color: var(--black-total);
 }
@@ -219,9 +224,7 @@ body {
   background-image: url('../img/hero_1920.jpg');
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.hero__container {
+  background-size: cover;
   padding-top: 147px;
   padding-bottom: 146px;
 }
@@ -270,7 +273,7 @@ body {
 }
 
 /* about-us */
-.about-us__container {
+.about-us {
   padding-top: 85px;
   padding-bottom: 70px;
 }
@@ -280,9 +283,6 @@ body {
   background-color: var(--black);
   background-image: url('../img/gallery_1920.jpg');
   color: var(--white);
-}
-
-.gallery__container {
   padding-top: 85px;
   padding-bottom: 77px;
 }
@@ -360,7 +360,7 @@ body {
 }
 
 /* catalog */
-.catalog__container {
+.catalog {
   padding-top: 85px;
   padding-bottom: 70px;
 }
@@ -374,8 +374,14 @@ body {
   gap: var(--gap);
 }
 
+.artist__picture {
+  height: 100%;
+}
+
 .artist__bio {
-  padding: 122px 10px 10px 50px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px 0 50px;
 }
 
 .artist__name {
@@ -400,13 +406,14 @@ body {
 }
 
 /* events */
-.events__container {
+.events {
   padding-top: 15px;
   padding-bottom: 70px;
 }
 
 .events__list {
   gap: var(--gap);
+  flex-wrap: wrap;
   font-size: 0;
   --offsets: 2;
 }
@@ -491,7 +498,7 @@ body {
 }
 
 /* projects */
-.projects__container {
+.projects {
   padding-top: 15px;
   padding-bottom: 80px;
 }
