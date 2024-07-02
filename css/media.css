@@ -440,7 +440,7 @@
   }
 
   .contacts__addres {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .contact__name {
@@ -448,12 +448,13 @@
     margin-bottom: 9px;
   }
 
-  .contact__form {
+  .contacts__form {
     flex-direction: column;
     margin-bottom: 33px;
   }
 
   .form {
+    padding-top: 0;
     row-gap: 20px;
   }
 
